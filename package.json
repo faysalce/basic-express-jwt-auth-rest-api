@@ -1,0 +1,24 @@
+{
+  "name": "sky-ads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Shekh Mostafizur Rahman",
+    "email": "faysal.ce@gmail.com",
+    "url": "http://www.geekscastle.com/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.14.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
