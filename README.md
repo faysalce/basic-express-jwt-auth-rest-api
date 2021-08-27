@@ -1,17 +1,6 @@
-# SkyAds
+# Faysal
 
-# SkyAds Express Server Start Guide 
-
-# Environment vars
-This project uses the following environment variables (.env file indide this project) please change required value:
-
-| Name                          | Description                         | Default Value                                  |
-| ----------------------------- | ------------------------------------| -----------------------------------------------|
-|SENDGRID_API_KEY           | This key you have to get from sengrid webapi and platform nodejs     | "*"      |
-|TO_EMAIL           | This key you can set here where email will go           | "*"      |
-|FROM_EMAIL           | This key you can set here from email it will be sendgrid Sender Authentication > Single Sender Verification  email        | "*"      |
-|EMAIL_SUBJECT           | This key you can set here email subject          | "*"      |
-
+# Faysal Express Server Start Guide 
 
 # Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) version latest stable
@@ -20,11 +9,11 @@ This project uses the following environment variables (.env file indide this pro
 # Getting started
 - Clone the repository
 ```
-git clone  https://github.com/zack686/SkyAds.git
+git clone  https://github.com/faysalce/basic-express-jwt-auth-rest-api.git
 ```
 - Install dependencies
 ```
-cd SkyAds
+cd basic-express-jwt-auth-rest-api
 npm install
 ```
 - Build and run the project
@@ -35,7 +24,9 @@ npm start
 
 -  endpoints
 
-  email sending end point Endpoint : http://localhost:3010/sendmail/
+  email SignIn end point Endpoint : http://localhost:3010/api/auth/signin/
+    email Register end point Endpoint : http://localhost:3010/api/auth/signup/
+
 
 
 
@@ -45,6 +36,6 @@ If you want to alive express server always even your server restart you need to 
 please go to application folder with cd command then 
 
 - sudo npm install pm2 -g
-- sudo pm2 start --name=SkyAds npm -- start
+- sudo pm2 start --name=express-jwt-rest npm -- start
 
 

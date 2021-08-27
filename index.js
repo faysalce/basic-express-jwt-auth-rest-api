@@ -69,7 +69,7 @@ app.post('/api/auth/signin', (req, res) => {
 
 });
 
-app.post('api/auth/signup', (req, res) => {
+app.post('/api/auth/signup', (req, res) => {
   console.log(req.body);
 
   const { name, email, phone, code, message } = req.body;
