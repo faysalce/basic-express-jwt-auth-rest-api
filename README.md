@@ -1,6 +1,4 @@
-# Faysal
-
-# Faysal Express Server Start Guide 
+# Node Express Rest API Server with JWT Start Guide 
 
 # Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) version latest stable
