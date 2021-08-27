@@ -22,7 +22,7 @@ app.post('/api/auth/signin', (req, res) => {
 
   const { password, username } = req.body;
 
-  if (username == "faysal.ce@gmail.com" && password == "1234" || username == "client@client.com" && password == "1234") {
+  if (username == "client@client.com" && password == "1234") {
     const token = jwt.sign(
       { id: 1, username },
       "mortage",
@@ -42,7 +42,7 @@ app.post('/api/auth/signin', (req, res) => {
     }
     return res.status(200).json({ success: true, data: userData, message: 'Login Successful!' });
 
-  } else if (username == "toskmilon@gmail.com" && password == "1234"|| username == "admin@admin.com" && password == "1234") {
+  } else if (username == "admin@admin.com" && password == "1234") {
     const token = jwt.sign(
       { id: 2, username },
       "mortage",
