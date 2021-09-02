@@ -16,6 +16,14 @@ app.listen(PORT, function () {
 });
 app.use(bodyParser.json());
 
+app.post('/api/auth/submit-data', (req, res) => {
+  console.log(req.body);
+
+  
+  return res.status(200).json({ success: true, data: req.body, message: 'Submit Successful!' });
+
+
+})
 
 app.post('/api/auth/signin', (req, res) => {
   console.log(req.body);
